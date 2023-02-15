@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="mobile_top_header">
+      <header class="mobile_header">
+        <img class="humbarger_menu" src="images/hamburger.svg" alt="" onclick="ShowMenu()" />
+        <div class="mobile_profile_icon_box">
+          <ul class="mobile_profile_icon_list">
+            <li><img class="mobile_bell" src="images/bell.svg" alt="" /></li>
+            <li><img src="images/Mask Group.svg" alt="" /></li>
+          </ul>
+        </div>
+      </header>
+      <div class="mobile_side_left">
+        <div class="logo">
+          <img src="images/payzocard.svg" alt="" />
+        </div>
+        <div class="nav_list">
+          <ul>
+            <li>
+              <a href="./index.html"> <img src="images/home.svg" alt="" />DASHBOARD</a>
+            </li>
+            <li>
+              <a href=""><img src="images/add.svg" alt="" />DEPOSIT</a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="images/circle-arrow-up.svg" alt="" />WITHDRAW</a
+              >
+            </li>
+            <li>
+              <a href="./buycard.html"><img src="images/cart-add.svg" alt="" />BUY CARD</a>
+            </li>
+            <li>
+              <a href="./mycard.html"><img src="images/credit-card.svg" alt="" />MY CARD</a>
+            </li>
+            <li>
+              <a href="./sendmoney.html" style=" background-color: #f9f6f6;color: #317cf0;"><img src="images/share.svg" alt="" />SEND MONEY</a>
+            </li>
+            <li>
+              <a href="./cardstatement.html"><img src="images/file.svg" alt="" />CARD STATEMENT</a>
+            </li>
+            <li>
+              <a href="exchange.html" ><img src="images/rotate.svg" alt="" />EXCHANGE</a>
+            </li>
+            <li>
+              <a href=""><img src="images/history.svg" alt="" />TRANSACTIONS</a>
+            </li>
+            <li>
+              <a href="setting.html"
+                ><img src="images/controls-alt.svg" alt="" />SETTINGS</a
+              >
+            </li>
+            <li>
+              <a href="support.html"><img src="images/chat.svg" alt="" />SUPPORT</a>
+            </li>
+            <li>
+              <a href=""><img src="images/help.svg" alt="" />FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main class="main_box">
+      <div class="side_left">
+        <div class="logo">
+          <img src="images/payzocard.svg" alt="" />
+        </div>
+        <div class="nav_list">
+          <ul>
+            <li>
+              <a href="./index.html"> <img src="images/home.svg" alt="" />DASHBOARD</a>
+            </li>
+            <li>
+              <a href=""><img src="images/add.svg" alt="" />DEPOSIT</a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="images/circle-arrow-up.svg" alt="" />WITHDRAW</a
+              >
+            </li>
+            <li>
+              <a href="" ><img src="images/cart-add.svg" alt="" />BUY CARD</a>
+            </li>
+            <li>
+              <a  href="./mycard.html"><img src="images/credit-card.svg" alt="" />MY CARD</a>
+            </li>
+            <li>
+              <a href="sendmoney.html" style=" background-color: #f9f6f6;color: #317cf0;"><img src="images/share.svg" alt="" />SEND MONEY</a>
+            </li>
+            <li>
+              <a href="./cardstatement.html"><img src="images/file.svg" alt="" />CARD STATEMENT</a>
+            </li>
+            <li>
+              <a href="exchange.html" ><img src="images/rotate.svg" alt="" />EXCHANGE</a>
+            </li>
+            <li>
+              <a href=""><img src="images/history.svg" alt="" />TRANSACTIONS</a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="images/controls-alt.svg" alt="" />SETTINGS</a
+              >
+            </li>
+            <li>
+              <a href=""><img src="images/chat.svg" alt="" />SUPPORT</a>
+            </li>
+            <li>
+              <a href=""><img src="images/help.svg" alt="" />FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="side_right">
+        
+<div class="exchange_card_title">
+  <p class="send_title">Send Money </p>
+
+</div>
+
+<div class="send_money_done_box">
+  <div class="send_box">
+    <div class="send_done">
+      <img src="./images/done.svg" alt="">
+      <h4>Money successfully sent</h4>
+    </div>
+  
+   <a href="#" >Done</a>
+  </div>
+
+</div>
+
+
+       
+      </div>
+    </main>
+    <script>
+
+      var selected = document.querySelector("div.selected");
+const optionsContainer = document.querySelector(".options-container");
+
+const optionsList = document.querySelectorAll(".option");
+
+selected.addEventListener("click", () => {
+  optionsContainer.classList.toggle("active");
+  selected.classList.toggle("active");
+
+});
+
+optionsList.forEach(o => {
+  o.addEventListener("click", () => {
+    selected.innerHTML = o.querySelector("label").innerHTML;
+    optionsContainer.classList.remove("active");
+  });
+});
+
+
+      var selected_2 = document.querySelector("div.selected_2");
+const option_con_2 = document.querySelector(".option_con_2");
+
+const option_2 = document.querySelectorAll(".option_2");
+
+selected_2.addEventListener("click", () => {
+  option_con_2.classList.toggle("active");
+  selected_2.classList.toggle("active");
+ 
+
+});
+
+option_2.forEach(o => {
+  o.addEventListener("click", () => {
+    selected_2.innerHTML = o.querySelector("label").innerHTML;
+    option_con_2.classList.remove("active");
+  });
+});
+
+function popup(){
+  var popup_box =document.querySelector(".popup_box");
+  var body =document.querySelector("body");
+  popup_box.classList.add("active");
+  body.classList.add("active");
+}
+function closepop(){
+  var popup_box =document.querySelector(".popup_box");
+  var popup_box_two =document.querySelector(".popup_box_two");
+  var body =document.querySelector("body");
+  popup_box.classList.remove("active");
+  popup_box_two.classList.remove("active");
+  body.classList.remove("active");
+}
+function popup_two(){
+  var popup_box =document.querySelector(".popup_box");
+  var popup_box_two =document.querySelector(".popup_box_two");
+  // var body =document.querySelector("body");
+  popup_box.classList.remove("active");
+  popup_box_two.classList.add("active");
+  // body.classList.remove("active");
+}
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>

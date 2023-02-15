@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="mobile_top_header">
+      <header class="mobile_header">
+        <img class="humbarger_menu" src="images/hamburger.svg" alt="" onclick="ShowMenu()" />
+        <div class="mobile_profile_icon_box">
+          <ul class="mobile_profile_icon_list">
+            <li><img class="mobile_bell" src="images/bell.svg" alt="" /></li>
+            <li><img src="images/Mask Group.svg" alt="" /></li>
+          </ul>
+        </div>
+      </header>
+      <div class="mobile_side_left">
+        <div class="logo">
+          <img src="images/payzocard.svg" alt="" />
+        </div>
+        <div class="nav_list">
+          <ul>
+            <li>
+              <a href="./index.html"> <img src="images/home.svg" alt="" />DASHBOARD</a>
+            </li>
+            <li>
+              <a href=""><img src="images/add.svg" alt="" />DEPOSIT</a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="images/circle-arrow-up.svg" alt="" />WITHDRAW</a
+              >
+            </li>
+            <li>
+              <a href="./buycard.html"><img src="images/cart-add.svg" alt="" />BUY CARD</a>
+            </li>
+            <li>
+              <a href="./mycard.html"><img src="images/credit-card.svg" alt="" />MY CARD</a>
+            </li>
+            <li>
+              <a href="./sendmoney.html"><img src="images/share.svg" alt="" />SEND MONEY</a>
+            </li>
+            <li>
+              <a href="./cardstatement.html"><img src="images/file.svg" alt="" />CARD STATEMENT</a>
+            </li>
+            <li>
+              <a href="./exchange.html"><img src="images/rotate.svg" alt="" />EXCHANGE</a>
+            </li>
+            <li>
+              <a href=""><img src="images/history.svg" alt="" />TRANSACTIONS</a>
+            </li>
+            <li>
+              <a href="setting.html"
+                ><img src="images/controls-alt.svg" alt="" />SETTINGS</a
+              >
+            </li>
+            <li>
+              <a href="support.html"><img src="images/chat.svg" alt="" />SUPPORT</a>
+            </li>
+            <li>
+              <a href=""><img src="images/help.svg" alt="" />FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main class="main_box">
+      <div class="side_left">
+        <div class="logo">
+          <img src="images/payzocard.svg" alt="" />
+        </div>
+        <div class="nav_list">
+          <ul>
+            <li>
+              <a href="./index.html"> <img src="images/home.svg" alt="" />DASHBOARD</a>
+            </li>
+            <li>
+              <a href=""><img src="images/add.svg" alt="" />DEPOSIT</a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="images/circle-arrow-up.svg" alt="" />WITHDRAW</a
+              >
+            </li>
+            <li>
+              <a href="buycard.html"><img src="images/cart-add.svg" alt="" />BUY CARD</a>
+            </li>
+            <li>
+              <a  href="./mycard.html"><img src="images/credit-card.svg" alt="" />MY CARD</a>
+            </li>
+            <li>
+              <a href="./sendmoney.html"><img src="images/share.svg" alt="" />SEND MONEY</a>
+            </li>
+            <li>
+              <a style=" background-color: #f9f6f6;color: #317cf0;" href="./cardstatement.html"><img src="images/file.svg" alt="" />CARD STATEMENT</a>
+            </li>
+            <li>
+              <a href="exchange.html"><img src="images/rotate.svg" alt="" />EXCHANGE</a>
+            </li>
+            <li>
+              <a href=""><img src="images/history.svg" alt="" />TRANSACTIONS</a>
+            </li>
+            <li>
+              <a href="setting.html"
+                ><img src="images/controls-alt.svg" alt="" />SETTINGS</a
+              >
+            </li>
+            <li>
+              <a href="support.html"><img src="images/chat.svg" alt="" />SUPPORT</a>
+            </li>
+            <li>
+              <a href=""><img src="images/help.svg" alt="" />FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="side_right">
+        <div class="profile-usermenu">
+          <div class="tab_list_box">
+            <ul class="tab_nav">
+              <li class="tab-element active" data-li="first">
+                <a href="javascript:void(0)" class="tab-link elm-02">
+                  <span>Reloadble</span>
+                </a>
+              </li>
+              <li class="tab-element" data-li="second">
+                <a href="javascript:void(0)" class="tab-link elm-03">
+                  <span>One-Time</span>
+                </a>
+              </li>
+              <li class="tab-element" data-li="third">
+                <a href="javascript:void(0)" class="tab-link elm-03">
+                  <span>Reqest Card</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="profile_icon_box">
+            <ul class="profile_icon_list">
+              <li><img src="images/bell.svg" alt="" /></li>
+              <li><img src="images/Mask Group.svg" alt="" /></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tab-content">
+          <div class="profile-content first active" id="">
+            <p>Select Card</p>
+            <div class="content_div">
+              <div class="card_no_list_box">
+                <ul class="card_no_list">
+                  <li class="card_no_li " data-li="card_system_one">
+                    <span>4288 03******7853</span>
+                    <span>USD</span> <button>Active</button>
+                  </li>
+                  <li class="card_no_li" data-li="card_system_two">
+                    <span>4288 03******7853</span>
+                    <span>USD</span> <button>Active</button>
+                  </li>
+                  <li class="card_no_li" data-li="card_system_three">
+                    <span>4288 03******7853</span>
+                    <span>USD</span> <button>Active</button>
+                  </li>
+                  <li class="card_no_li" data-li="card_system_four">
+                    <span>4288 03******7853</span>
+                    <span>USD</span> <button>Active</button>
+                  </li>
+                  <li class="card_no_li" data-li="card_system_five">
+                    <span>4288 03******7853</span>
+                    <span>USD</span> <button>Active</button>
+                  </li>
+                  <li class="card_no_li" data-li="card_system_six">
+                    <span>4288 03******7853</span>
+                    <span>USD</span> <button>Active</button>
+                  </li>
+                  <li class="card_no_li" data-li="card_system_seven">
+                    <span>4288 03******7853</span>
+                    <span>USD</span> <button>Active</button>
+                  </li>
+                  <li class="card_no_li" data-li="card_system_eight">
+                    <span>4288 03******7853</span>
+                    <span>USD</span> <button>Active</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="card_details_box">
+                <div class="card_details card_system_one ">
+                  <div class="card_address card_statement_details_box">
+                    <div class="card_img_box card_state_btn_box">
+                      <img src="images/visablank 1.svg" alt="" />
+                      <a href="">REQEUST STEATMENT</a>
+                      
+                    </div>
+                    <!-- <div class="card_address_details">
+
+
+                      <div class="card_d_all">
+                        <h2>$100.59</h2>
+                        <div class="accordion_div">
+                          <div class="add_state">
+                            <span>
+                              <h4>Address:</h4>
+
+                              <b>333 Fremont Street</b>
+                            </span>
+                            <span>
+                              <h4>State:</h4>
+
+                              <b>CA</b>
+                            </span>
+                          </div>
+                          <div class="add_state add_state_2">
+                            <span>
+                              <h4>City :</h4>
+
+                              <b>San Francisco</b>
+                            </span>
+                            <span>
+                              <h4>Zip:</h4>
+
+                              <b>94105</b>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="accordion_show_hide"></div>
+                      </div>
+                    </div> -->
+                    <div class="custom_table">
+                      <div class="thead">
+                        <div class="trow">
+                          <span>CARD NO.</span>
+                          <span>REQESTED (DATE AND TIME)</span>
+                          <span>STATUS </span>
+                          <span>ACTION</span>
+                        </div>
+                       
+                      </div>
+                      <div class="tbody">
+                        <div class="trow">
+                          <span>4288 03******7853</span>
+                          <span>24/11/2021 15:11 pm	</span>
+                          <span><a href="" class="pending">Pending</a> </span>
+                          <span> </span>
+                        </div>
+                        <div class="trow">
+                          <span>4288 03******7853</span>
+                          <span>24/11/2021 15:11 pm	</span>
+                          <span><a href="" class="confrim">Confrim</a> </span>
+                          <span><a href="" class="download">Download</a> </span>
+                        </div>
+                        <div class="trow">
+                          <span>4288 03******7853</span>
+                          <span>24/11/2021 15:11 pm	</span>
+                          <span><a href="" class="confrim">Confrim</a> </span>
+                          <span><a href="" class="download">Download</a> </span>
+                        </div>
+                        <div class="trow">
+                          <span>4288 03******7853</span>
+                          <span>24/11/2021 15:11 pm	</span>
+                          <span><a href="" class="confrim">Confrim</a> </span>
+                          <span><a href="" class="download">Download</a> </span>
+                        </div>
+                        <div class="trow">
+                          <span>4288 03******7853</span>
+                          <span>24/11/2021 15:11 pm	</span>
+                          <span><a href="" class="confrim">Confrim</a> </span>
+                          <span><a href="" class="download">Download</a> </span>
+                        </div>
+                        <div class="trow">
+                          <span>4288 03******7853</span>
+                          <span>24/11/2021 15:11 pm	</span>
+                          <span><a href="" class="confrim">Confrim</a> </span>
+                          <span><a href="" class="download">Download</a> </span>
+                        </div>
+                        <div class="trow">
+                          <span>4288 03******7853</span>
+                          <span>24/11/2021 15:11 pm	</span>
+                          <span><a href="" class="confrim">Confrim</a> </span>
+                          <span><a href="" class="download">Download</a> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="top_up_box">
+                    <div class="topup">
+                      <a href="">
+                        <img src="images/deposit_receive.svg" alt="" />
+                      </a>
+                      <span>Topup</span>
+                    </div>
+                    <div class="topup">
+                      <input type="checkbox" name="" id="checkbtn" />
+                      <label class="switch" for="checkbtn"></label>
+                      <b class="onbtn">On</b>
+                      <b class="offbtn">Off</b>
+
+                      <span>Renew</span>
+                    </div>
+                    <div class="topup">
+                      <a href="">
+                        <img src="images/deposit_received.svg" alt="" />
+                      </a>
+                      <span>Withdraw</span>
+                    </div>
+                  </div> -->
+
+                  <!-- <div class="input_range_box">
+
+                    <div class="input_range">
+                      <span class="days_value">30 day left</span>
+
+                      <input type="range" name="" id="input_range" />
+                    </div>
+                  </div> -->
+
+                  <!-- <div class="latest_transction_box">
+                    <div class="transaction_title_box">
+                      <h3>Latest Transactions</h3>
+                      <span class="view_all"
+                        >View All <img src="images/arrow-right.svg" alt=""
+                      /></span>
+                    </div>
+                    <div class="latest_transction">
+                      <table style="width: 100%">
+                        <thead>
+                          <tr>
+                            <th style="width: 40%; text-align: left">
+                              Name of the Transactions
+                            </th>
+                            <th style="width: 30%; text-align: left">Date</th>
+                            <th style="width: 20%; text-align: left">Amount</th>
+                            <th style="width: 10%; text-align: center">
+                              Status
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style="width: 40%; text-align: left">
+                              Udamy Austria
+                            </td>
+                            <td style="width: 30%; text-align: left">
+                              13/09/2021 2:24 PM
+                            </td>
+                            <td style="width: 20%; text-align: left">+$29</td>
+                            <td style="width: 10%; text-align: center">
+                              <a href="">Paid</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 40%; text-align: left">
+                              Udamy Austria
+                            </td>
+                            <td style="width: 30%; text-align: left">
+                              13/09/2021 2:24 PM
+                            </td>
+                            <td style="width: 20%; text-align: left">+$29</td>
+                            <td style="width: 10%; text-align: center">
+                              <a href="">Paid</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 40%; text-align: left">
+                              Udamy Austria
+                            </td>
+                            <td style="width: 30%; text-align: left">
+                              13/09/2021 2:24 PM
+                            </td>
+                            <td style="width: 20%; text-align: left">+$29</td>
+                            <td style="width: 10%; text-align: center">
+                              <a href="" class="decline" style="color: red"
+                                >Decline</a
+                              >
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 40%; text-align: left">
+                              Udamy Austria
+                            </td>
+                            <td style="width: 30%; text-align: left">
+                              13/09/2021 2:24 PM
+                            </td>
+                            <td style="width: 20%; text-align: left">+$29</td>
+                            <td style="width: 10%; text-align: center">
+                              <a href="">Paid</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 40%; text-align: left">
+                              Udamy Austria
+                            </td>
+                            <td style="width: 30%; text-align: left">
+                              13/09/2021 2:24 PM
+                            </td>
+                            <td style="width: 20%; text-align: left">+$29</td>
+                            <td style="width: 10%; text-align: center">
+                              <a href="">Paid</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="latest_transction_box_mobile">
+                    <div class="transaction_title_box">
+                      <h3 class="mobile_title">Latest Transactions</h3>
+                      <span class="view_all_mobile">View All </span>
+                    </div>
+                    <div class="latest_tra_table">
+                      <table style="width: 100%">
+                        <tbody>
+                          <tr>
+                            <td style="width: 70%; text-align: left">
+                              <div class="mobile_table_money_div">
+                                <span class="money_box"
+                                  ><img src="images/money.svg" alt=""
+                                /></span>
+                                <span class="name_date_mobile">
+                                  VYKE
+                                  <b> 09 Jun 22:28</b>
+                                </span>
+                              </div>
+                            </td>
+
+                            <td style="width: 30%; text-align: center">
+                              <span class="mobile_currency">-120,45 USD</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 70%; text-align: left">
+                              <div class="mobile_table_money_div">
+                                <span class="money_box"
+                                  ><img src="images/money.svg" alt=""
+                                /></span>
+                                <span class="name_date_mobile">
+                                  Deposit
+                                  <b> 09 Jun 22:28</b>
+                                </span>
+                              </div>
+                            </td>
+
+                            <td style="width: 30%; text-align: center">
+                              <span class="mobile_currency">-120,45 USD</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 70%; text-align: left">
+                              <div class="mobile_table_money_div">
+                                <span class="money_box"
+                                  ><img src="images/money.svg" alt=""
+                                /></span>
+                                <span class="name_date_mobile">
+                                  Topup card**4500
+                                  <b> 09 Jun 22:28</b>
+                                </span>
+                              </div>
+                            </td>
+
+                            <td style="width: 30%; text-align: center">
+                              <span class="mobile_currency">-120,45 USD</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div> -->
+                </div>
+                <div class="card_details card_system_two"></div>
+              </div>
+            </div>
+          </div>
+          <div class="profile-content second" id="">sabbir</div>
+          <div class="profile-content third" id="">Mahamud</div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var humbarger_menu = document.querySelector(".humbarger_menu");
+var li = document.querySelectorAll(".tab_nav li");
+var show_div = document.querySelectorAll(".profile-content");
+var side_left = document.querySelector(".mobile_side_left");
+var accordion_show_hide = document.querySelector(".accordion_show_hide");
+var accordion_div = document.querySelector(".accordion_div");
+var add_state = document.querySelector(".add_state");
+var add_state_2 = document.querySelector(".add_state_2");
+var accordion_show_hide = document.querySelector(".accordion_show_hide");
+
+      var dateVal = document.querySelector(".days_value");
+var inputRange = document.querySelector("#input_range");
+inputRange.oninput = () => {
+  let rangeVal = inputRange.value;
+  dateVal.textContent = rangeVal + " day left";
+  dateVal.style.left = rangeVal / 1 + "%";
+};
+humbarger_menu.onclick = () => {
+  side_left.classList.toggle("active");
+};
+accordion_show_hide.onclick = () => {
+  accordion_div.classList.toggle("active");
+  add_state.classList.toggle("active");
+  add_state_2.classList.toggle("active");
+  accordion_show_hide.classList.toggle("active");
+};
+    </script>
+ <script src="./main.js"></script>
+  </body>
+</html>

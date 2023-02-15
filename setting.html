@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a220f051b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  
+  </head>
+  <body>
+    <div class="mobile_top_header">
+      <header class="mobile_header">
+        <img class="humbarger_menu" src="images/hamburger.svg" alt="" onclick="ShowMenu()" />
+        <div class="mobile_profile_icon_box">
+          <ul class="mobile_profile_icon_list">
+            <li><img class="mobile_bell" src="images/bell.svg" alt="" /></li>
+            <li><img src="images/Mask Group.svg" alt="" /></li>
+          </ul>
+        </div>
+      </header>
+      <div class="mobile_side_left">
+        <div class="logo">
+          <img src="images/payzocard.svg" alt="" />
+        </div>
+        <div class="nav_list">
+          <ul>
+            <li>
+              <a href="./index.html"> <img src="images/home.svg" alt="" />DASHBOARD</a>
+            </li>
+            <li>
+              <a href=""><img src="images/add.svg" alt="" />DEPOSIT</a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="images/circle-arrow-up.svg" alt="" />WITHDRAW</a
+              >
+            </li>
+            <li>
+              <a href="./buycard.html"><img src="images/cart-add.svg" alt="" />BUY CARD</a>
+            </li>
+            <li>
+              <a href="./mycard.html"><img src="images/credit-card.svg" alt="" />MY CARD</a>
+            </li>
+            <li>
+              <a href="./sendmoney.html" ><img src="images/share.svg" alt="" />SEND MONEY</a>
+            </li>
+            <li>
+              <a href="./cardstatement.html"><img src="images/file.svg" alt="" />CARD STATEMENT</a>
+            </li>
+            <li>
+              <a href="exchange.html" ><img src="images/rotate.svg" alt="" />EXCHANGE</a>
+            </li>
+            <li>
+              <a href=""><img src="images/history.svg" alt="" />TRANSACTIONS</a>
+            </li>
+            <li>
+              <a href="setting.html"
+              style=" background-color: #f9f6f6;color: #317cf0;" ><img src="images/controls-alt.svg" alt="" />SETTINGS</a
+              >
+            </li>
+            <li>
+              <a href="support.html"><img src="images/chat.svg" alt="" />SUPPORT</a>
+            </li>
+            <li>
+              <a href=""><img src="images/help.svg" alt="" />FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main class="main_box">
+      <div class="side_left">
+        <div class="logo">
+          <img src="images/payzocard.svg" alt="" />
+        </div>
+        <div class="nav_list">
+          <ul>
+            <li>
+              <a href="./index.html"> <img src="images/home.svg" alt="" />DASHBOARD</a>
+            </li>
+            <li>
+              <a href=""><img src="images/add.svg" alt="" />DEPOSIT</a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="images/circle-arrow-up.svg" alt="" />WITHDRAW</a
+              >
+            </li>
+            <li>
+              <a href="buycard.html" ><img src="images/cart-add.svg" alt="" />BUY CARD</a>
+            </li>
+            <li>
+              <a  href="./mycard.html"><img src="images/credit-card.svg" alt="" />MY CARD</a>
+            </li>
+            <li>
+              <a href="sendmoney.html"><img src="images/share.svg" alt="" />SEND MONEY</a>
+            </li>
+            <li>
+              <a href="./cardstatement.html"><img src="images/file.svg" alt="" />CARD STATEMENT</a>
+            </li>
+            <li>
+              <a href="exchange.html" ><img src="images/rotate.svg" alt="" />EXCHANGE</a>
+            </li>
+            <li>
+              <a href=""><img src="images/history.svg" alt="" />TRANSACTIONS</a>
+            </li>
+            <li>
+              <a href="setting.html"
+              style=" background-color: #f9f6f6;color: #317cf0;"> ><img src="images/controls-alt.svg" alt="" />SETTINGS</a
+              >
+            </li>
+            <li>
+              <a href="support.html"><img src="images/chat.svg" alt="" />SUPPORT</a>
+            </li>
+            <li>
+              <a href=""><img src="images/help.svg" alt="" />FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="side_right">
+        <div class="setting_box">
+          <div class="setting_left">
+            <span>Setting</span>
+            <ul class="setting_tab_nav">
+              <li class="tab-element active" data-li="first">
+                <a href="javascript:void(0)" class="tab-link elm-02">
+                  <span>Personal Info</span>
+                </a>
+              </li>
+              <li class="tab-element" data-li="second">
+                <a href="javascript:void(0)" class="tab-link elm-03">
+                  <span>Security</span>
+                </a>
+              </li>
+              <li class="tab-element" data-li="third">
+                <a href="javascript:void(0)" class="tab-link elm-03">
+                  <span>Verification</span>
+                </a>
+              </li>
+              <li class="tab-element" data-li="fourth">
+                <a href="javascript:void(0)" class="tab-link elm-03">
+                  <span>Referral</span>
+                </a>
+              </li>
+            </ul>
+            
+          </div>
+          <div class="setting_right">
+            <div class="setting_content_box first active" id="">
+              <div class="setting_tab_personal_info">
+                <div class="name_box">
+                <div class="first_name_box">
+                  <label for="First_name">First Name</label>
+                  <input type="text" name="" id="First_Name"  value="John De" disabled>
+                </div>
+
+           <div class="last_name_box">
+            <label for="Last_name">Last Name</label>
+            <input type="text" name="" id="Last_name"  value="Jara" disabled>
+           </div>
+
+                </div>
+                <div class="email_phone_box">
+                <div class="email_address_box">
+                  <label for="email_address">Email Address</label>
+                  <input type="text" name="" id="email_address"  value="ad737c@temporary-mail.net" disabled>
+                </div>
+
+           <div class="phone_number_box">
+            <label for="phone_number">Phone number</label>
+            <input type="text" name="" id="phone_number"  value="	404-906-6818" disabled>
+           </div>
+
+                </div>
+
+                <div class="address_info_box">
+                  <label for="address_info">Address</label>
+                  <input type="text" name="" id="address_info"  value="2137 Stroop Hill Road" disabled>
+
+                  <input type="text" name="" id="address_info_2"  value="Minnesota" disabled>
+                </div>
+
+                <div class="city_box">
+                  <div class="email_address_box">
+                    <label for="email_address">City</label>
+                    <input type="text" name="" id="email_address"  value="CANTON" disabled>
+                  </div>
+  
+             <div class="phone_number_box">
+              <label for="phone_number">Post Code</label>
+              <input type="text" name="" id="phone_number"  value="55922" disabled>
+             </div>
+  
+                  </div>
+
+                  <div class="image_box">
+                    <div class="img_up">
+                      <img src="./images/josim.png" alt="">
+                    </div>
+                    <div class="up_btn_box">
+                      <label for="up_btn">Upload Image</label>
+                      <input type="file" name="" id="up_btn">
+                    </div>
+
+                    <a href="#">Remove</a>
+                    
+                  </div>
+              </div>
+            </div>
+            <div class="setting_content_box second" id="">
+              <div class="setting_tab_verification_info">
+
+            <div class="password_box">
+               <h4>Passowrd</h4>
+              <p>Please enter your current password to change your password</p>
+            </div>
+
+           <div class="setting_ver_content">
+            <div class="current_password">
+              <label for="curr_pass">Current password</label>
+              <input type="text" name="" id="curr_pass" value="********">
+              </div>
+              <div class="New_Password">
+              <label for="new_pass">New password</label>
+              <input type="text" name="" id="new_pass" value="********">
+              <span>Your new password must be more than 8 characters</span>
+              </div>
+              <div class=" confrim_New_Password">
+              <label for="con_new_pass"> Confrim New Password</label>
+              <input type="text" name="" id="con_new_pass" value="********">
+              <a href="#"> Update Password</a>
+              </div>
+              <div class="new_pin_box">
+                <div class="new_pin">
+                  <label for="n_pin">New pin</label>
+                  <input type="text" name="" id="n_pin" value="*****">
+                </div>
+                <div class="con_pin">
+                  <label for="c_pin">Confrim pin</label>
+                  <input type="text" name="" id="c_pin" value="*****">
+                </div>
+
+             
+  
+              </div>
+              <div class="default_pin_box">
+                <span>Default Pin 1234</span>
+                <a href="#"> Update Pin</a>
+               </div>
+              <div class="two_fa_box">
+                <h3>Two Factor Authentication
+                </h3>
+                <p>Two-factor authentication (2FA), sometimes referred to as two-step verification or dual-factor authentication, 
+                  is a security process in which users provide two different authentication factors to verify themselves. 
+                  This process is done to better protect both the user's credentials and the resources the user can access.
+                  
+                  </p>
+                  <a href="#">Generate a key to enable 2FA</a>
+              </div>
+           </div>
+            
+              </div>
+            </div>
+            <div class="setting_content_box third" id="">
+              <div class="verfication_content">
+                <div class="main">
+                  <!-- <h1>
+                    Now uplaod or drag&drop <br />
+                    <b>proper Document</b>
+                  </h1> -->
+                  
+                  <div class="drag_area">
+                    <div class="drag_area_first_content">
+                      <span class="drag_icon"
+                        ><i class="fas fa-cloud-upload-alt"></i
+                      ></span>
+                      <p>JPG,PNG or PDF ,Smaller than 10 MB</p>
+                      <span class="drag_text">Drag and drop your image here or </span>
+                      <input type="file" name="" id="file" hidden />
+                      <label for="file" class="choose_file_lebel">Choose file</label>
+                    </div>
+                    <div class="uploading_div">
+                      <img src="./images/uploading.png" alt="" />
+                      <span class="arrow_top"><i class="fas fa-arrow-up"></i></span>
+                    </div>
+                    <div class="progress_img">
+                      <img class="" src="./images/progress.gif" alt="" />
+                    </div>
+                  </div>
+      
+                  <div class="preview_box">
+                    <div class="preview"></div>
+      
+                    <div class="add_another">
+                      <a href="">+ Add another documents</a>
+                    </div>
+                  </div>
+      
+                  <div class="button_area">
+                    <button>Back</button>
+                    <button>Continue</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting_content_box fourth" id="">
+              <div class="referral_content_box">
+  <div class="referral_title">
+    <h2>Referrals</h2>
+    <p>Invite your friend payzocard, if they sign up, and buy the card 
+      you will get 5% of the card price</p>
+  </div>
+  <div class="ref_circle_box">
+<div class="ref_card card_one">
+  <div class="circle_one">
+    <img src="./images/message-add.svg" alt="">
+  </div>
+  <h3>Send Invitation
+  </h3>
+  <p>Send your referral link to 
+    friends and tell them how 
+     cool Payzocard is!</p>
+</div>
+
+<img src="./images/Vector 1.svg" alt="">
+
+<div class="ref_card card_two ">
+  <div class="circle_two circle_one">
+    <img src="./images/new.svg" alt="">
+  </div>
+  <h3>Registration</h3>
+  <p>Let them register to 
+    our services using your referral 
+    link.</p>
+</div>
+
+<img src="./images/Vector 2.svg" alt="">
+
+<div class="ref_card card_three">
+  <div class="circle_three circle_one">
+    <img src="./images/crt_add.svg" alt="">
+  </div>
+  <h3>Buy card</h3>
+  <p>If your friend buy any
+    card from payzocard 
+    You will get 5% on card price
+    Instantly</p>
+</div>
+
+  </div>
+  <div class="share_link">
+    <h3>Share the referral link</h3>
+    <p>You can also share your referral link by  copying and sending it or sharing it on your social media</p>
+  </div>
+  <div class="ref_one">
+    <span>https://payzocard.com/register?referral=5</span>
+    <span class="copy_text">Copy Link</span>
+  </div>
+  <div class="banar_btn">
+    <a href="#" class="baner">Baner</a>
+    <a href="#" class="list_ref">List referral</a>
+  </div>
+
+  <div class="baner_728_box">
+    <div class="baner_728">
+
+    </div>
+    <span class="banar_size">728 × 90</span>
+  </div>
+  <div class="ref_two">
+    <span>https://payzocard.com/register?referral=5</span>
+    <span class="copy_text">Copy Code</span>
+  </div>
+  <div class="baner_300_box">
+    <div class="baner_300">
+
+    </div>
+    <span class="banar_size">300 × 600</span>
+  </div>
+  <div class="ref_two">
+    <span>https://payzocard.com/register?referral=5</span>
+    <span class="copy_text">Copy Code</span>
+  </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+
+
+
+
+       
+      </div>
+    </main>
+    <script>
+
+      var selected = document.querySelector("div.selected");
+const optionsContainer = document.querySelector(".options-container");
+
+const optionsList = document.querySelectorAll(".option");
+
+selected.addEventListener("click", () => {
+  optionsContainer.classList.toggle("active");
+  selected.classList.toggle("active");
+
+});
+
+optionsList.forEach(o => {
+  o.addEventListener("click", () => {
+    selected.innerHTML = o.querySelector("label").innerHTML;
+    optionsContainer.classList.remove("active");
+  });
+});
+
+
+      var selected_2 = document.querySelector("div.selected_2");
+const option_con_2 = document.querySelector(".option_con_2");
+
+const option_2 = document.querySelectorAll(".option_2");
+
+selected_2.addEventListener("click", () => {
+  option_con_2.classList.toggle("active");
+  selected_2.classList.toggle("active");
+ 
+
+});
+
+option_2.forEach(o => {
+  o.addEventListener("click", () => {
+    selected_2.innerHTML = o.querySelector("label").innerHTML;
+    option_con_2.classList.remove("active");
+  });
+});
+
+function popup(){
+  var popup_box =document.querySelector(".popup_box");
+  var body =document.querySelector("body");
+  popup_box.classList.add("active");
+  body.classList.add("active");
+}
+function closepop(){
+  var popup_box =document.querySelector(".popup_box");
+  var body =document.querySelector("body");
+  popup_box.classList.remove("active");
+  body.classList.remove("active");
+}
+    </script>
+    <script src="./main.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
